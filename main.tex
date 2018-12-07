@@ -1,0 +1,84 @@
+\documentclass[10pt, mathserif]{beamer} % font and normalsize
+\usetheme{Madrid}
+\usepackage{xeCJK}
+%\usepackage{charter}
+\usepackage{comment}
+%\usepackage[colorlinks=false]{hyperref}
+
+\usepackage[title,titletoc]{appendix}
+\usepackage{pagecolor}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+%\usepackage{ulem}
+%\usepackage{siunitx}
+%\sisetup{per=slash, load=abbr}
+
+\mode<presentation>
+{
+    \setbeamercovered{dynamic}  % translucent when using pause
+    \setbeamertemplate{navigation symbols}{}    % hide navigation bars
+    \setbeamertemplate{caption}[numbered]   % numerate captions
+    %\setbeamertemplate{background}{\includegraphics[height=\paperheight]{ISEE.pdf}} % set background image
+    %\setbeamertemplate{footline}{\footnotesize \insertframenumber/\inserttotalframenumber \hfill}   % display page number at bottom left corner
+}
+
+
+
+\usepackage{pgfplots}
+\usetikzlibrary{positioning}
+\usetikzlibrary{fit}
+\usetikzlibrary{snakes}
+\usetikzlibrary{shapes.geometric}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shapes,arrows,chains}
+\usepgfplotslibrary{patchplots,colormaps}
+\usetikzlibrary{calc}
+\usetikzlibrary{positioning, fit}
+\usetikzlibrary{backgrounds}
+\usetikzlibrary{intersections}
+
+
+%\setCJKmainfont[BoldFont = STSongti-SC-Bold]{STSongti-SC-Regular}
+
+\newcommand{\reffig}[1]{图\ref{#1}}
+\newcommand{\refsec}[1]{\S \ref{#1}}
+
+
+\newcommand{\nrcore}{Core Nebulas Rank}
+\newcommand{\nrext}{Extended Nebulas Ranks}
+\newcommand{\dom}{{\; \texttt{dom}\;}}
+\renewcommand{\figurename}{图}
+
+%\setCJKsansfont[BoldFont = STHeitiSC-Medium]{STHeitiSC-Light}
+
+
+\input{common.tex}
+
+
+\begin{document}
+
+\title[Research Team]{Nebulas Research Team}
+\author{Chenmin Wang}
+
+\date{2018-11-30}
+
+%\AtBeginSection[]
+%{
+%\begin{frame}
+%    \tableofcontents[currentsection, currentsubsection]
+%\end{frame}
+%}
+
+\begin{frame}
+    \titlepage	% make the cover page here
+\end{frame}
+
+\input{work.tex}
+
+
+\section{Q \& A}
+\begin{frame}
+	Thanks for your listening. \\
+	Question \& Answer.
+\end{frame}
+\end{document}
